@@ -11,7 +11,7 @@ function stripArticle(name) {
 const sortedBands = bands.sort((a, b) => stripArticle(a).localeCompare(stripArticle(b)));
 
 document.addEventListener("DOMContentLoaded", function () {
-    const bandList = document.getElementById("band");
+    const bandList = document.getElementById("bands");
     bandList.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
 });
 
